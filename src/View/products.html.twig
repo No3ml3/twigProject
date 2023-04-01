@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bonjour</title>
+    <link rel="icon" href="/assets/images/favicon.png">
+</head>
+
+<body>
+    <h1>Mes instruments :</h1>
+    <ul>
+        {% for products in product %}
+            <li> {{ products }} </li>
+        {% endfor %}
+    </ul>    
+{{ dump(products) }}
+</body>
+</html>
